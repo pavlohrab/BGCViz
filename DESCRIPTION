@@ -1,0 +1,28 @@
+Package: BGCViz
+Type: Package
+Title: Visualize BGC intersection from different tools in one genome
+Version: 0.1.1
+Date: 2021-03-16
+Author: Pavlo Hrab
+Maintainer: The package maintainer <pavlo.hrab@lnu.edu.ua>
+Description: The BGCViz is a shiny application, which takes
+    BGC annotation results from antiSMASH, PRISM, SEMPI, 
+    ARTS, DeepBGC, RREFinder and contructs several plots
+    to pinpoint either clusters which are annotated several times, 
+    or which are unique for certain tools. We believe that this
+    would help to contruct more full BGC landscape in newly sequenced genomes.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends:
+    shiny,
+    tidyverse,
+    plyr,
+    plotly,
+    BioCircos,
+    ggplot2,
+    shinyjs,
+    rjson,
+    stringr,
+    DT
+biocViews : GenomicRanges
